@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBANMOVE</title>
+    <meta name="Author" content="최혜은">
+    <meta content="URBANMOVE" property="og:title">
+    <meta content="Location de voiture et de deux roues pour une expérience marquante." property="og:description">
+    <meta content="URBANMOVE" property="twitter:title">
+    <meta content="Location de voiture et de deux roues pour une expérience marquante." property="twitter:description">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="./assets/js/gsap.js"></script>
+    <script src="./assets/js/ScrollTrigger.js"></script>
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/header.js" defer></script>
+    <script src="./assets/js/main.js" defer></script>
+    <script src="./assets/js/footer.js" defer></script>
+    
+
+</head>
+<body>
+    <div class="loading" style="height: 100vh;">
+        <div class="loading-cursor">
+            <div class="cursor-deco">
+                <img src="./assets/images/cursor_tl.svg" alt>
+                <img src="./assets/images/cursor_tr.svg" alt>
+            </div>
+            <div class="cursor-text">Explorer</div>
+            <div class="cursor-deco">
+                <img src="./assets/images/cursor_bl.svg" alt>
+                <img src="./assets/images/cursor_br.svg" alt>
+            </div>
+        </div>
+        <div class="loading-wrap">
+            <div class="loading-bg">
+                <video autoplay="" loop="" muted="muted" playsinline="" data-object-fit="cover" poster="./assets/images/654e53515aa7a298c1d0ecd6_URBANMOVIE-grey-poster-00001.jpg">
+                    <source src="./assets/images/loader_vid.mp4">
+                </video>
+            </div>
+            <strong class="loading-title">Evasion <br> urbaine</strong>
+            <div class="loading-explorer">
+                <div class="ex-deco">
+                    <img src="./assets/images/cursor_tl.svg" alt>
+                    <img src="./assets/images/cursor_tr.svg" alt>
+                </div>
+                <div class="ex-text">Explorer</div>
+                <div class="ex-deco">
+                    <img src="./assets/images/cursor_bl.svg" alt>
+                    <img src="./assets/images/cursor_br.svg" alt>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <header id="header">
+            <nav class="gnb">
+                <div class="gnb-wrap">
+                    <a href="" class="logo"><img src="./assets/images/logo_sm.svg" alt="URBANMOVE" width="65" height="24"></a>
+                    <button class="nav-burger" aria-label="popup nav">
+                        <div class="open"><img src="./assets/images/nav_burger.svg" alt="open"></div>
+                        <div class="close"><img src="./assets/images/burger_close.svg" alt="close"></div>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="nav-popup">
+                <div class="pop-wrap">
+                    <div class="pop-content">
+                        <ul class="pop-box">
+                            <li class="pop-row">
+                                <strong class="text">BIENVENUE</strong>
+                                <a href="" class="link">Accueil</a>
+                            </li>
+                            <li class="pop-row">
+                                <strong class="text">CE QUE NOUS OFFRONS</strong>
+                                <a href="" class="link">nos services</a>
+                            </li>
+                            <li class="pop-row">
+                                <strong class="text">POURQUOI NOUS?</strong>
+                                <a href="" class="link">À propos</a>
+                            </li>
+                            <li class="pop-row">
+                                <strong class="text">UNE QUESTION?</strong>
+                                <a href="" class="link">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pop-info">
+                        <div class="pop-sns">
+                            <a href="" target="_blank" class="sns-link">SNAPCHAT</a>
+                            <a href="" target="_blank" class="sns-link">INSTAGRAM</a>
+                            <a href="" target="_blank" class="sns-link">TIKTOK</a>
+                            <a href="" target="_blank" class="sns-link">CONDITIONS GÉNÉRALES</a>
+                        </div>
+                        <a href="" class="pop-btn">Je veux louer</a>
+                        <div class="pop-customer">
+                            <a href="mailto:info@urbanmove.ch" class="customer-link">info@urbanmove.ch</a>
+                            <a href="tel:+41799290379" class="customer-link">+41 79 929 03 79</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </header>
+
+        <main id="main">
+            <section class="sc-hero">
+                <div class="padding-box">
+                    <div class="hero-wrap">
+                        <div class="hero-title">
+                            <img src="./assets/images/hero_logo_sm.svg" alt>
+                        </div>
+                        <div class="hero-content">
+                            <a href="" class="btn-shortcut">Je veux louer</a>
+                            <div class="text-area">
+                                <p class="desc">
+                                    LOUEZ N'IMPORTE QUEL SCOOTER OU VOITURE PAR L'INTERMÉDIAIRE DE VOS MÉDIAS SOCIAUX
+                                </p>
+                            </div>
+                            <h1><img src="./assets/images/hero_logo.svg" alt="URBANMOVE"></h1>
+                        </div>
+                        <div class="hero-bg"></div>
+                        <div class="hero-gradient"></div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="sc-hero-add">
+                <h2 class="blind">OUR IDENTITY</h2>
+                <div class="add-area">
+                    <div class="text-wrap">
+                        <div class="text">
+                            <strong>la vie est trop</strong>
+                            <strong>courte pour</strong>
+                            <strong>conduire des</strong>
+                            <strong>véhicules</strong>
+                            <strong>ordinaires</strong>
+                        </div>
+                        <div class="empty-space"></div>
+                    </div>
+                    <div class="img-wrap">
+                        <div class="img-box b1"><img src="./assets/images/hero_add1.jpg" alt></div>
+                        <div class="img-box b2"><img src="./assets/images/hero_add2.jpg" alt></div>
+                        <div class="img-box b3"><img src="./assets/images/hero_add3.jpg" alt></div>
+                        <div class="img-box b4"><img src="./assets/images/hero_add4.jpg" alt></div>
+                        <div class="img-box b5"><img src="./assets/images/hero_add5.jpg" alt></div>
+                        <div class="img-box b6"><img src="./assets/images/hero_add6.jpg" alt></div>
+                        <div class="img-box b7"><img src="./assets/images/hero_add7.jpg" alt></div>
+                        <div class="img-box b8"><img src="./assets/images/hero_add8.jpg" alt></div>
+                        <div class="img-box b9"><img src="./assets/images/hero_add9.jpg" alt></div>
+                        <div class="img-box b10"><img src="./assets/images/hero_add10.jpg" alt></div>
+                        <div class="img-box b11"><img src="./assets/images/hero_add11.jpg" alt></div>
+                        <div class="img-box b12"><img src="./assets/images/hero_add12.jpg" alt></div>
+                        <div class="img-box b13"><img src="./assets/images/hero_add13.jpg" alt></div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="sc-content">
+                <div class="content-wrap">
+                    <div class="highlight-row1 padding-box">
+                        <h2 class="title">
+                            <img src="./assets/images/highlight_logo.svg" alt="NOS véhicules">
+                        </h2>
+                        <div class="desc">
+                            <p class="paragraph">
+                                Nous nous engageons à vous offrir une expérience de conduite inoubliable à Genève et dans ses environs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="highlight-row2">
+                        <div class="thumb-wrap">
+                            <div class="thumb-box top">
+                                <ul class="thumb-list">
+                                    <li class="thumb-item top-1"></li>
+                                    <li class="thumb-item top-2"></li>
+                                    <li class="thumb-item top-3"></li>
+                                </ul>
+                                <ul class="thumb-list hidden-left">
+                                    <li class="thumb-item top-4"></li>
+                                    <li class="thumb-item top-5"></li>
+                                    <li class="thumb-item top-6"></li>
+                                </ul>
+                            </div>
+                            <div class="thumb-box bottom">
+                                <ul class="thumb-list">
+                                    <li class="thumb-item bottom-1"></li>
+                                    <li class="thumb-item bottom-2"></li>
+                                    <li class="thumb-item bottom-3"></li>
+                                </ul>
+                                <ul class="thumb-list hidden-right">
+                                    <li class="thumb-item bottom-4"></li>
+                                    <li class="thumb-item bottom-5"></li>
+                                    <li class="thumb-item bottom-6"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <section class="sc-service">
+                        <h3 class="blind">Product</h3>
+                        <div class="service-wrap">
+                            <div class="service-box1">
+                                <div class="col-left">
+                                    <div class="text-wrap">
+                                        <div class="text-box nmax on">
+                                            <div class="thumb-mob"><img src="./assets/images/service1.jpg" alt="N-MAX 125"></div>
+                                            <h3 class="name">N-MAX 125</h3>
+                                            <p class="paragraph">
+                                                Modèle urbain haut de gamme, capable de passer de la ville aux pistes tout-terrain en un rien de temps. Le X-ADV transforme chaque trajet en une expérience unique. Le cadre de type diamant en acier tubulaire, associé à la géométrie de direction et à la suspension à grand débattement, assure une conduite légère et agile.
+                                            </p>
+                                            <ul class="details">
+                                                <li class="detail-row">
+                                                    <span>750 Cc 48chevaux</span>
+                                                </li>
+                                                <li class="detail-row">
+                                                    <span>Boîte auto Éclairage LED</span>
+                                                </li>
+                                                <li class="detail-row add">
+                                                    <div class="add-wrap">
+                                                        <span>750 Cc 48chevaux</span>
+                                                        <div class="add-caption">
+                                                            18 ans au minimum / Permis / Passeport suisse
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <strong class="price">
+                                                24H/70.-
+                                            </strong>
+                                            <a href="" class="btn-shortcut">Je veux louer</a>
+                                        </div>
+
+                                        <div class="text-box bmw">
+                                            <div class="thumb-mob"><img src="./assets/images/service2.jpg" alt="BMW M4 compétition"></div>
+                                            <h3 class="name">BMW M4 compétition</h3>
+                                            <p class="paragraph">
+                                                Modèle urbain haut de gamme, capable de passer de la ville aux pistes tout-terrain en un rien de temps. Le X-ADV transforme chaque trajet en une expérience unique. Le cadre de type diamant en acier tubulaire, associé à la géométrie de direction et à la suspension à grand débattement, assure une conduite légère et agile.
+                                            </p>
+                                            <div class="details">
+                                                <div class="detail-row">
+                                                    <span>650 Nm de couple Boîte auto</span>
+                                                </div>
+                                                <div class="detail-row">
+                                                    <span>510 chevaux 375 kw (puissance)</span>
+                                                </div>
+                                                <div class="detail-row">
+                                                    <span>Moteur 6L 3.0 l. 4 places</span>
+                                                </div>
+                                            </div>
+                                            <strong class="price">
+                                                24h/250km → 550.- <br> 24h/250km → 550.- 
+                                            </strong>
+                                            <a href="" class="btn-shortcut">Je veux louer</a>
+                                        </div>
+
+                                        <div class="text-box xadv">
+                                            <div class="thumb-mob"><img src="./assets/images/service3.jpg" alt="X-adv 750"></div>
+                                            <h3 class="name">X-adv 750</h3>
+                                            <p class="paragraph">
+                                                Modèle urbain haut de gamme, capable de passer de la ville aux pistes tout-terrain en un rien de temps. Le X-ADV transforme chaque trajet en une expérience unique. Le cadre de type diamant en acier tubulaire, associé à la géométrie de direction et à la suspension à grand débattement, assure une conduite légère et agile.
+                                            </p>
+                                            <div class="details">
+                                                <div class="detail-row">
+                                                    <span>750 Cc 48chevaux</span>
+                                                </div>
+                                                <div class="detail-row">
+                                                    <span>Boîte auto Éclairage LED</span>
+                                                </div>
+                                                <div class="detail-row">
+                                                    <span>35kw Échappement Leo Vince racing</span>
+                                                </div>
+                                            </div>
+                                            <strong class="price">
+                                                24h/km illimité → 140.-  <br> 48h/km illimité → 280.-
+                                            </strong>
+                                            <a href="" class="btn-shortcut">Je veux louer</a>
+                                        </div>
+                                    </div>
+                                    <div class="empty"></div>
+                                    <div class="empty"></div>
+                                </div>
+
+                                <div class="col-right">
+                                    <div class="thumb-box nmax">
+                                        <div class="hover-cursor"></div>
+                                    </div>
+                                    <div class="thumb-box bmw">
+                                        <div class="hover-cursor"></div>
+                                    </div>
+                                    <div class="thumb-box xadv">
+                                        <div class="hover-cursor"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="service-box2">
+                                <div class="deco">
+                                </div>
+                                <div class="text">
+                                    <a href="" class="btn-shortcut">
+                                        Remplir le formulaire
+                                    </a>
+                                </div>
+                                <div class="deco">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            
+            <section class="sc-about">
+                <div class="about-wrap">
+                    <h2 class="title padding-box">
+                        <img src="./assets/images/about_title.svg" alt="NOTRE ENGAGEMENT">
+                    </h2>
+                    <div class="thumb">
+                        <img src="./assets/images/about_thumb.jpg" alt>
+                    </div>
+                    <div class="desc padding-box">
+                        Chez URBANMOVE, nous nous engageons à fournir à nos clients une expérience de location de voiture et de deux roues inégalée. Nos véhicules de rêve sont méticuleusement entretenus pour garantir des performances optimales et une sécurité absolue. Nous sommes fiers de notre équipe de professionnels dévoués, prêts à répondre à tous vos besoins et à faire en sorte que chaque trajet soit une aventure mémorable.
+                    </div>
+                </div>
+            </section>
+
+            <section class="sc-about-add">
+                <h2 class="blind">ABOUT URBANMOVE</h2>
+                <div class="add-wrap">
+                    <div class="add-box padding-box">
+                        <div class="col-text">
+                            <div class="deco"></div>
+                            <div class="text">
+                                <strong class="title">Une Flotte <br> Exceptionnelle</strong>
+                                <p class="paragraph">
+                                    Notre collection de voitures et de deux roues d'exception comprend des modèles emblématiques comme la M4 compétition, ou le X-ADV 750 chacune offrant une expérience de conduite unique.
+                                </p>
+                            </div>
+                            <div class="deco"></div>
+                        </div>
+                        <div class="col-thumb">
+                            <img src="./assets/images/about_add1.jpg" alt="UNE FLOTTE EXCEPTIONNELLE">
+                        </div>
+                    </div>
+
+                    <div class="add-box padding-box">
+                        <div class="col-thumb">
+                           <img src="./assets/images/about_add2.jpg" alt="SERVICE PERSONNALISÉ">
+                        </div>
+                        <div class="col-text">
+                            <div class="deco"></div>
+                            <div class="text">
+                                <strong class="title">Service <br> Personnalisé</strong>
+                                <p class="paragraph">
+                                    Notre équipe expérimentée est là pour vous conseiller et vous guider dans le choix du véhicule parfait pour chaque occasion.
+                                </p>
+                            </div>
+                            <div class="deco"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-box-row3">
+                    <div class="add-box padding-box">
+                        <div class="col-text">
+                            <div class="deco"></div>
+                            <div class="text">
+                                <strong class="title">Facilité <br> d'Utilisation</strong>
+                                <p class="paragraph">
+                                    Notre processus de réservation en ligne simple et notre service de livraison pratique font de la location chez URBANMOVE une expérience sans tracas.
+                                </p>
+                            </div>
+                            <div class="deco"></div>
+                        </div>
+                        <div class="col-thumb">
+                            <img src="./assets/images/about_add3.jpg" alt="FACILITÉ D'UTILISATION">
+                        </div>
+                    </div>
+
+                    <div class="form-wrap padding-box">
+                        <h3 class="blind">LEASE FORM</h3>
+                        <div class="form-row1">
+                            <div class="title">
+                                <img src="./assets/images/form_title.svg" alt="VOTRE FUTURE EXPERIENCE">
+                            </div>
+                            <div class="desc">
+                                Louez rapidement et facilement
+                            </div>
+                        </div>
+                        <div class="form-row2">
+                            <div class="row2-wrap">
+                                <div class="content-box">
+                                    <div class="paragraph">
+                                        <div class="title">
+                                            <strong>Un formulaire</strong>
+                                            <br>
+                                            <strong>simple et rapide</strong>
+                                            <br>
+                                            <strong>pour ta location.</strong>
+                                        </div>
+                                        <p class="desc">Parce que personne n'aime perdre du temps.</p>
+                                    </div>
+                                    <div class="shortcut-area">
+                                        <button class="btn-shortcut">
+                                            Je veux louer
+                                        </button>
+                                        <span class="caption">appuyez sur <strong>Entrée ↵</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gradient-bg"></div>
+                </div>
+            </section>
+
+            <section class="sc-contact">
+                <div class="padding-box">
+                    <div class="contact-wrap">
+                        <div class="deco">
+                            <span class="square"></span>
+                            <span class="square"></span>
+                        </div>
+                        <div class="text">
+                            <div class="contact-area">
+                                <h2 class="title">Contact</h2>
+                                <a href="mailto:info@urbanmove.ch" class="email">info@urbanmove.ch</a>
+                                <a href="tel:+41799290379" class="number">+41 79 929 03 79</a>
+                            </div>
+                            <p class="caption">écrivez-nous ou appelez-nous</p>
+                            <div class="sns-area">
+                                <a href="" class="sns">SNAPCHAT</a>
+                                <a href="" class="sns">INSTAGRAM</a>
+                                <a href="" class="sns">TIKTOK</a>
+                            </div>
+                        </div>
+                        <div class="deco">
+                            <span class="square"></span>
+                            <span class="square"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+
+        <footer id="footer">
+            <h2 class="blind">URBANMOVE footer</h2>
+            <div class="footer-box row1">
+               <img src="./assets/images/f_logo.svg" alt="URBANMOVE">
+                <div class="f-link">
+                    <a href="" class="link">Accueil</a>
+                    <a href="" class="link">nos services</a>
+                    <a href="" class="link">À propos</a>
+                    <a href="" class="link">COntact</a>
+                </div>
+            </div>
+            
+            <div class="footer-box row2">
+               <strong>COMMENCER<br>L’EXPÉRIENCE</strong>
+                <a href="" class="btn-shortcut" aria-label="lease button">Je veux louer</a>
+            </div>
+
+            <div class="footer-box rowlast">
+                <div class="f-link padding-box">
+                    <a href="" class="link-sm">instagram</a>
+                    <a href="" class="link-sm">snapchat</a>
+                    <a href="" class="link-sm">tiktok</a>
+                </div>
+
+                <div class="f-loop">
+                    <div class="loop-frame">
+                        <ul class="frame-box">
+                            <li><img src="./assets/images/f_urban.svg" alt></li>
+                            <li><img src="./assets/images/f_move.svg" alt></li>
+                        </ul>
+                        <ul class="frame-box">
+                            <li><img src="./assets/images/f_urban.svg" alt></li>
+                            <li><img src="./assets/images/f_move.svg" alt></li>
+                        </ul>
+                    </div>
+                    <div class="loop-bg"><img src="./assets/images/footer_bg.jpg" alt="URBANMOVE"></div>
+                </div>
+
+                <div class="f-policy padding-box">
+                    <div class="col-left">
+                        <small class="copyright">copyrights © URBANMOVE 2024</small>
+                        <a href="" class="caption">Politique de confidentialité</a>
+                        <a href="" class="caption">CONDITIONS GÉNÉRALES DE LOCATION</a>
+                    </div>
+                    <div class="col-right">
+                        <a href="" class="link-wttm">
+                            <div class="text-box">
+                                <p class="text">
+                                    Developed by <span class="spacemono">WTTM</span>
+                                </p>
+                            </div>
+                            <img src="./assets/images/wttm.svg" alt="wttm">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

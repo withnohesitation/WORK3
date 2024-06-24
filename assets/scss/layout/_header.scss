@@ -1,0 +1,198 @@
+#header {  
+    .gnb {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: auto;
+        z-index: 99;
+        mix-blend-mode: difference; 
+        padding: 0 32px;
+        overflow: hidden;
+        @include mobile {
+            padding: 0 16px;
+        }
+    }
+    
+    .gnb-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 0;
+        }
+        .logo {
+            a {
+                background-color: rgba(0, 0, 0, 0);
+            }
+        }
+        .nav-burger{
+            position: relative;
+            background-color: rgba(0, 0, 0, 0);
+            transition: 0.2s;
+            &.on {
+                background-color: rgb(253, 198, 9);
+                .open {visibility: hidden; opacity: 0;}
+                .close {visibility: visible; opacity: 1;}
+            }
+            .open {
+            }
+            .close {
+                position: absolute;
+                top: 13%;
+                bottom: 13%;
+                left: 13%;
+                right: 13%;
+                background: var(--yellow);
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+         
+    .nav-popup {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: var(--yellow);
+        z-index: 98;
+        width: 100%;
+        transition: 0.2s linear;
+        transform: translateY(-100%);
+        &.on {
+            transform: translateY(0);
+        }
+        .pop-wrap {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 6rem;
+            margin-top: 96px;
+            padding: 0 96px;
+            @include mobile {
+                padding: 0 16px;
+            }
+            .pop-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 24px;
+                text-align: center;
+                overflow: hidden;
+                .pop-row {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    .text {
+                        color: var(--black);
+                        font-weight: 900;
+                    }
+                    .link {
+                        font-family: $font-arch;
+                        text-transform: uppercase;
+                        color: var(--black);
+                        font-size: 50px;
+                        font-weight: 400;
+                        line-height: 61px;
+                        -webkit-text-stroke-width: 1px;
+                        -webkit-text-stroke-color: transparent;
+                        text-decoration: none;
+                        transition: -webkit-text-stroke-color .5s, color .5s;
+                        &:hover {
+                            color: rgba(0, 0, 0, 0);
+                            -webkit-text-stroke-color: var(--black);
+                            outline: 0;
+                        }
+                        @include mobile {
+                            font-size: 28px;
+                            line-height: 33px;
+                        }
+                    }
+                }
+            }
+
+            .pop-info {
+                font-family: $font-basic;
+                font-weight: 800;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                position: relative;
+                .pop-sns {
+                    width: 336px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 24px;
+                    .sns-link {
+                        color: #000;
+                        -webkit-text-stroke-width: 1px;
+                        -webkit-text-stroke-color: transparent;
+                        text-decoration: none;
+                        transition: -webkit-text-stroke-color .5s, color .5s;
+                        &:hover {
+                            color: rgba(0, 0, 0, 0);
+                            -webkit-text-stroke-color: var(--black);
+                            outline: 0;
+                        }
+                        &:last-of-type {
+                            min-width: 208px;
+                        }
+                    }
+                }
+                .pop-btn {
+                    text-transform: uppercase;
+                    font-family: $font-basic;
+                    font-weight: 900;
+                    border: 1px solid var(--black);
+                    background-color: var(--black);
+                    color: var(--yellow);
+                    padding: 8px 20px;
+                    transition: background-color .5s;
+                    &:hover {
+                        border-color: var(--black);
+                        color: var(--black);
+                        background-color: rgba(0, 0, 0, 0);
+                    }
+                }
+                .pop-customer {
+                    display: flex;
+                    gap: 24px;
+                    .customer-link {
+                        color: #000;
+                        -webkit-text-stroke-width: 1px;
+                        -webkit-text-stroke-color: transparent;
+                        text-decoration: none;
+                        transition: -webkit-text-stroke-color .5s, color .5s;
+                        &:hover {
+                            color: rgba(0, 0, 0, 0);
+                            -webkit-text-stroke-color: var(--black);
+                            outline: 0;
+                        }
+                    }
+                }
+                @include tablet {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    align-items: center;
+                    gap: 32px;
+                    .pop-sns {
+                        display: none;
+                    }
+                    .pop-customer {
+                        display: none;
+                    }
+                }
+                @include mobile {
+                    .pop-sns {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    
+}

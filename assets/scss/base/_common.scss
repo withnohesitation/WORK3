@@ -1,0 +1,45 @@
+:root {
+    --black: #000;
+    --bg-color: #151515;
+    --yellow: #fdc609;
+    --white: white;
+    --white-2: white;
+    --black-2: black;
+}
+
+.blind {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip: rect(0,0,0,0);
+}
+
+#wrapper {
+    position: relative;
+}
+
+.padding-box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 0 32px;
+    @include mobile {
+        padding: 0 16px;
+    }
+}
+
+.btn-shortcut {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: $font-arch;
+    padding: 8px 20px;
+    border: 1px solid var(--yellow);
+    color: var(--yellow);
+    background-color: rgba(56, 152, 236, 0);
+}
+
+section {
+    padding-top: 160px;
+}
