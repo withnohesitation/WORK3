@@ -61,7 +61,7 @@ gsap.to('.sc-hero-add .img-wrap .img-box',{
         //markers: true,
         scrub:0,
     },
-    yPercent:-120
+    yPercent:-200
 })
 
 
